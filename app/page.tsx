@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ArrowRight, Star } from "lucide-react";
 
 export default function Home() {
   return (
@@ -15,45 +16,84 @@ export default function Home() {
           <span className="text-muted-foreground">Powered by AI.</span>
         </h1>
         
-        <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 mb-8">
+        <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 mb-6">
           Optimize prompts. Estimate tokens. Format JSON. <br />
           An open-source toolkit designed to simplify common AI development workflows.
         </p>
+
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-12 text-sm text-muted-foreground/80 font-medium">
+          <span className="bg-muted px-3 py-1 rounded-full">Next.js 15</span>
+          <span className="bg-muted px-3 py-1 rounded-full">TypeScript</span>
+          <span className="bg-muted px-3 py-1 rounded-full">Tailwind CSS</span>
+          <span className="bg-muted px-3 py-1 rounded-full">shadcn/ui</span>
+        </div>
         
-        <div className="flex gap-4 mb-24">
+        <div className="flex gap-4 mb-24 flex-col sm:flex-row">
           <Link href="/prompt-optimizer">
-            <Button size="lg" className="rounded-full">Launch App</Button>
+            <Button size="lg" className="rounded-full w-full sm:w-auto">Launch App</Button>
           </Link>
           <a href="https://github.com/shreyamdash/devboost-ai" target="_blank" rel="noreferrer">
-            <Button size="lg" variant="outline" className="rounded-full">GitHub</Button>
+            <Button size="lg" variant="outline" className="rounded-full w-full sm:w-auto">
+              <Star className="mr-2 h-4 w-4" /> View Source on GitHub
+            </Button>
           </a>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-5xl text-left">
-          <Link href="/prompt-optimizer" className="group relative rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
-            <h3 className="font-mono font-semibold tracking-tight mb-2">Prompt Optimizer</h3>
-            <p className="text-sm text-muted-foreground">Transform any short prompt into a detailed, expert-level prompt for LLMs.</p>
+          <Link href="/prompt-optimizer" className="group relative flex flex-col justify-between rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
+            <div>
+              <h3 className="font-mono font-semibold tracking-tight mb-2">Prompt Optimizer</h3>
+              <p className="text-sm text-muted-foreground">Transform any short prompt into a detailed, expert-level prompt for LLMs.</p>
+            </div>
+            <div className="mt-4 flex items-center text-sm font-medium text-primary opacity-80 group-hover:opacity-100 transition-opacity">
+              Open Tool <ArrowRight className="ml-1 h-4 w-4" />
+            </div>
           </Link>
-          <Link href="/token-counter" className="group relative rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
-            <h3 className="font-mono font-semibold tracking-tight mb-2">Token Counter</h3>
-            <p className="text-sm text-muted-foreground">Estimate token counts for GPT, Claude, and Gemini instantly.</p>
+          <Link href="/token-counter" className="group relative flex flex-col justify-between rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
+            <div>
+              <h3 className="font-mono font-semibold tracking-tight mb-2">Token Counter</h3>
+              <p className="text-sm text-muted-foreground">Estimate token counts for GPT, Claude, and Gemini instantly.</p>
+            </div>
+            <div className="mt-4 flex items-center text-sm font-medium text-primary opacity-80 group-hover:opacity-100 transition-opacity">
+              Open Tool <ArrowRight className="ml-1 h-4 w-4" />
+            </div>
           </Link>
-          <Link href="/json-formatter" className="group relative rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
-            <h3 className="font-mono font-semibold tracking-tight mb-2">JSON Formatter</h3>
-            <p className="text-sm text-muted-foreground">Paste ugly JSON. Press format. Done. Clean and accessible.</p>
+          <Link href="/json-formatter" className="group relative flex flex-col justify-between rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
+            <div>
+              <h3 className="font-mono font-semibold tracking-tight mb-2">JSON Formatter</h3>
+              <p className="text-sm text-muted-foreground">Paste ugly JSON. Press format. Done. Clean and accessible.</p>
+            </div>
+            <div className="mt-4 flex items-center text-sm font-medium text-primary opacity-80 group-hover:opacity-100 transition-opacity">
+              Open Tool <ArrowRight className="ml-1 h-4 w-4" />
+            </div>
           </Link>
           
-          <Link href="/cost-calculator" className="group relative rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
-            <h3 className="font-mono font-semibold tracking-tight mb-2">AI Cost Calculator</h3>
-            <p className="text-sm text-muted-foreground">Calculate precise API costs for Claude, GPT, and Gemini models.</p>
+          <Link href="/cost-calculator" className="group relative flex flex-col justify-between rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
+            <div>
+              <h3 className="font-mono font-semibold tracking-tight mb-2">AI Cost Calculator</h3>
+              <p className="text-sm text-muted-foreground">Calculate precise API costs for Claude, GPT, and Gemini models.</p>
+            </div>
+            <div className="mt-4 flex items-center text-sm font-medium text-primary opacity-80 group-hover:opacity-100 transition-opacity">
+              Open Tool <ArrowRight className="ml-1 h-4 w-4" />
+            </div>
           </Link>
-          <Link href="/markdown-converter" className="group relative rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
-            <h3 className="font-mono font-semibold tracking-tight mb-2">Markdown Converter</h3>
-            <p className="text-sm text-muted-foreground">Instantly convert Markdown syntax into raw HTML.</p>
+          <Link href="/markdown-converter" className="group relative flex flex-col justify-between rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
+            <div>
+              <h3 className="font-mono font-semibold tracking-tight mb-2">Markdown Converter</h3>
+              <p className="text-sm text-muted-foreground">Instantly convert Markdown syntax into raw HTML.</p>
+            </div>
+            <div className="mt-4 flex items-center text-sm font-medium text-primary opacity-80 group-hover:opacity-100 transition-opacity">
+              Open Tool <ArrowRight className="ml-1 h-4 w-4" />
+            </div>
           </Link>
-          <Link href="/base64-encoder" className="group relative rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
-            <h3 className="font-mono font-semibold tracking-tight mb-2">Base64 Encoder</h3>
-            <p className="text-sm text-muted-foreground">Fast utility to encode and decode base64 strings securely.</p>
+          <Link href="/base64-encoder" className="group relative flex flex-col justify-between rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
+            <div>
+              <h3 className="font-mono font-semibold tracking-tight mb-2">Base64 Encoder</h3>
+              <p className="text-sm text-muted-foreground">Fast utility to encode and decode base64 strings securely.</p>
+            </div>
+            <div className="mt-4 flex items-center text-sm font-medium text-primary opacity-80 group-hover:opacity-100 transition-opacity">
+              Open Tool <ArrowRight className="ml-1 h-4 w-4" />
+            </div>
           </Link>
         </div>
       </main>
@@ -66,6 +106,8 @@ export default function Home() {
           </p>
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <p>Licensed under MIT</p>
+            <span className="hidden sm:inline-block border-l h-4"></span>
+            <p className="font-mono font-medium">v1.1.0</p>
           </div>
         </div>
       </footer>
