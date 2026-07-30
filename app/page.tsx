@@ -29,15 +29,15 @@ export default function Home() {
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-5xl text-left">
         <Link href="/prompt-optimizer" className="group relative rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
-          <h3 className="font-bold mb-2">Prompt Optimizer</h3>
+          <h3 className="font-mono font-semibold tracking-tight mb-2">Prompt Optimizer</h3>
           <p className="text-sm text-muted-foreground">Transform any short prompt into a detailed, expert-level prompt for LLMs.</p>
         </Link>
         <Link href="/token-counter" className="group relative rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
-          <h3 className="font-bold mb-2">Token Counter</h3>
+          <h3 className="font-mono font-semibold tracking-tight mb-2">Token Counter</h3>
           <p className="text-sm text-muted-foreground">Estimate token counts for GPT, Claude, and Gemini instantly.</p>
         </Link>
         <Link href="/json-formatter" className="group relative rounded-2xl border bg-card p-6 hover:border-foreground/20 transition-colors shadow-sm">
-          <h3 className="font-bold mb-2">JSON Formatter</h3>
+          <h3 className="font-mono font-semibold tracking-tight mb-2">JSON Formatter</h3>
           <p className="text-sm text-muted-foreground">Paste ugly JSON. Press format. Done. Clean and accessible.</p>
         </Link>
       </div>
