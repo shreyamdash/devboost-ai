@@ -22,7 +22,7 @@ export default function Home() {
         <Link href="/prompt-optimizer">
           <Button size="lg" className="rounded-full">Launch App</Button>
         </Link>
-        <a href="https://github.com/priyamishra/devboost-ai" target="_blank" rel="noreferrer">
+        <a href="https://github.com/shreyamdash/devboost-ai" target="_blank" rel="noreferrer">
           <Button size="lg" variant="outline" className="rounded-full">GitHub</Button>
         </a>
       </div>
