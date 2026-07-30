@@ -1,12 +1,14 @@
 <div align="center">
   <h1>DevBoost AI</h1>
-  <p>Open Source AI Toolkit for Developers</p>
+  
+  DevBoost AI is an open source toolkit that I'm actively building to simplify common AI development workflows. The project currently provides tools for prompt optimization, token estimation, JSON formatting, AI cost calculation, Markdown conversion, and Base64 encoding/decoding. While it's an early-stage project, it's being actively developed with regular updates, versioned releases, and an open roadmap. My goal is to create a practical toolkit that developers can extend, contribute to, and use in their daily AI workflows.
+  <br/><br/>
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   [![Open Source](https://img.shields.io/badge/Open_Source-%E2%99%A5-red)](https://github.com/shreyamdash/devboost-ai)
   [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
 
-  <img src="https://via.placeholder.com/800x400/111111/FFFFFF?text=DevBoost+AI+App+Screenshot" alt="DevBoost AI Screenshot" width="800"/>
+  <img src="./public/screenshot.png" alt="DevBoost AI Screenshot" width="800"/>
 </div>
 
 ## ✨ Features
