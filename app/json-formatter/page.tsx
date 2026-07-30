@@ -23,8 +23,8 @@ export default function JsonFormatter() {
       const formatted = JSON.stringify(parsed, null, 2);
       setOutput(formatted);
       setError(null);
-    } catch (e: any) {
-      setError(e.message || "Invalid JSON");
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Invalid JSON");
     }
   };
 

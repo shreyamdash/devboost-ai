@@ -26,7 +26,7 @@ Please provide only the requested code and necessary explanations.`;
     await new Promise(resolve => setTimeout(resolve, 1500));
 
     return NextResponse.json({ optimized: mockOptimizedPrompt });
-  } catch (error) {
+  } catch (_error) {
     return NextResponse.json({ error: "Failed to optimize prompt" }, { status: 500 });
   }
 }

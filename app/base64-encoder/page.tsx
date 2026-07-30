@@ -17,7 +17,7 @@ export default function Base64Encoder() {
       } else {
         setOutput(decodeURIComponent(escape(atob(input))));
       }
-    } catch (e) {
+    } catch (_e) {
       setOutput("Error: Invalid input for this operation.");
     }
   };
