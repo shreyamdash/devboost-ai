@@ -96,6 +96,13 @@ export default function Home() {
             </div>
           </Link>
         </div>
+
+        <div className="mt-32 mb-16 max-w-3xl text-center space-y-4 px-4 bg-muted/30 p-8 rounded-3xl border border-border/50">
+          <h2 className="text-2xl font-bold tracking-tight">About DevBoost AI</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            DevBoost AI is an open source toolkit focused on simplifying common AI development workflows. It is built with Next.js, TypeScript, and Tailwind CSS, and is designed to grow through community contributions and new developer-focused utilities. The project is in its early stages and is being actively developed.
+          </p>
+        </div>
       </main>
 
       <footer className="border-t py-6 md:py-0">
